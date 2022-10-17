@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="hemmmm.html">Download</a> |
+            <a href="kontak.html">Contact</a> |
+            <a href="tentang.html">About me</a> 
+        </nav>
+
+        <hr />
+
+        <article>
+            <h1>tentang saya </h1>
+            <p>
+                hi,saya adalah calan ketua pdi masa depan.
+                saat inis saya ingin berjuang untuk indonesia
+            </p>
+            <p>
+                saya ini sedang belajar HTML.
+            </p>
+            <p>
+                saya ingin menguasai bahasa HTML, cas, dan javascrips
+                simak vidio lengkap tentang saya tri nugroho
+            </p>
+            <p>
+                <button onclick="durationVid()" type="button">Duration</button>
+                <button onclick="playvid()" type="button">Play Video</button>
+                <button onclick="pauseVid()" type="button">Pause Video</button>
+                <button onclick="skipVid()" type="button">Skip Video</button>
+            </p>
+            <p>
+
+                <video id="myVideo" width="320" height="240" controls>
+                <source src="Sejarah PDI Perjuangan.mp4" type="video/mp4">
+                </video>
+            </p>
+            <script>
+                var vid= document.getElementById("myVideo")
+                function durationVid(){
+                    vid.duration();
+                }
+                function playvid(){
+                    vid.play();
+                }
+                function pauseVid(){
+                    vid.pause();
+                }
+            </script>
+        </article>
+
+        <hr>
+        <footer style="text-align: center">
+            <p>copyright &copy; 2022 trio nugoho.</p>
+        </footer>
+</body>
+</html>
